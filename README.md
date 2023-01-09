@@ -1,2 +1,6 @@
-# web-425
-Coding exercises and assignments for Bellevue university's class web-425
+# WEB 425 Angular withTypeScript
+
+## Contributors
+
+- Richard Krasso
+- Jamal Damir
