@@ -1,0 +1,43 @@
+<!--
+    Title: home.component.html.
+    Author: Jamal Eddine Damir
+    Date: January 8, 2023
+    Description: app.component.html file for Web-425 Exercise 1.5.
+    Sources:
+            * Source code from class GitHub Repository
+            * W3Schools.com
+            * Instructor provided assignment specific instructions
+-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active"><a class="nav-link">Home</a></li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link">About</a></li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link">Contact Us</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <br /><br />
+  <h2>Exercise 3.3 - Passing Data to Routes, Part 2</h2>
+  <br /><br />
+  <div class="row" *ngIf="isLoggedIn; else showError">
+    <div class="col-sm-4">
+      <app-my-image></app-my-image>
+    </div>
+    <div class="col-sm-8">
+      <app-my-details></app-my-details>
+    </div>
+  </div>
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
+</div>

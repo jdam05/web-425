@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 import { Composer } from '../composer.class';
 import { IComposer } from '../composer.interface';
 
-// component to display composer details
+// component to display composer list
 @Component({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
