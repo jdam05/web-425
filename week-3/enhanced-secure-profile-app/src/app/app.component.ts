@@ -11,7 +11,6 @@
 // Import Component object
 import { Component } from '@angular/core';
 
-
 // defining component's metadata
 @Component({
   selector: 'app-root',
@@ -21,5 +20,5 @@ import { Component } from '@angular/core';
 
 // AppComponent class
 export class AppComponent {
-  title = 'Exercise 3.2 - Passing Data to Routes, Part 1';
+  assignment: string = 'Enhanced Secure Profile App';
 }
