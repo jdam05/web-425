@@ -1,0 +1,16 @@
+/*
+ * Title: composer-list.component.css
+ * Date: January 24, 2023
+ * Author: Jamal Eddine Damir
+ * Description: Composer list component CSS file
+ * Sources:
+ * Source code from class GitHub Repository
+ * Instructor provided assignment specific instructions
+ */
+
+/* Styling input field*/
+.txtSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
