@@ -1,0 +1,24 @@
+<!--
+ * Title: composer-details.component.html
+ * Date: January 12, 2023
+ * Author: Jamal Eddine Damir
+ * Description: Composer details component
+ * Sources:
+ * Source code from class GitHub Repository
+ * Instructor provided assignment specific instructions
+ -->
+
+<!-- Tables displaying composer details-->
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <!-- Displaying composer's ID, full name and music genre-->
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <!-- Anchor to navigate back composer list page-->
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>
