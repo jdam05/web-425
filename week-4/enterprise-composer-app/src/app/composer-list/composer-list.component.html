@@ -1,0 +1,47 @@
+<!--
+ * Title: composer-list.component.html
+ * Date: January 12, 2023
+ * Author: Jamal Eddine Damir
+ * Description: Composer list component
+ * Sources:
+ * Source code from class GitHub Repository
+ * Instructor provided assignment specific instructions
+ -->
+
+<div class="row">
+  <div class="col-sm-12">
+    <!-- Div containing input field with form control-->
+    <div class="txtSearch">
+      <input
+        type="text"
+        id="txtSearch"
+        class="form-control"
+        [formControl]="txtSearchControl"
+        placeholder="Search by name"
+      />
+    </div>
+    <!-- Tables displaying list of composers-->
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Composer ID</th>
+          <th scope="col">Composer's name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <!-- Iterate over composers array with async pipe-->
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row">
+            <!-- Passing composerId from composer-details-->
+            <a routerLink="/composer-details/{{ composer.composerId }}">{{
+              composer.composerId
+            }}</a>
+          </td>
+          <td>{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

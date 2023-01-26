@@ -1,0 +1,42 @@
+<!--
+    Title: app.component.html.
+    Author: Jamal Eddine Damir
+    Date: January 14, 2023
+    Description: app.component.html file
+    Sources:
+            * Source code from class GitHub Repository
+            * W3Schools.com
+            * Instructor provided assignment specific instructions
+-->
+
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <br /><br />
+
+  <h2>Assignment 4.4 - Async Pipe</h2>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Router Outlet-->
+      <router-outlet> </router-outlet>
+    </div>
+  </div>
+</div>
