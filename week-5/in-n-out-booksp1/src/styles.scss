@@ -1,0 +1,46 @@
+/*
+ * Title: styles.scss
+ * Date: February 4, 2023
+ * Author: Jamal Eddine Damir
+ * Description: In-n-out-books main styles SCSS file
+ * Sources:
+ * Source code from class GitHub Repository
+ * Instructor provided assignment specific instructions
+ */
+
+@import "./theme";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.blue {
+  color: #2196f3;
+}
+.green {
+  color: #66bb6a;
+}
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon,
+.mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}
