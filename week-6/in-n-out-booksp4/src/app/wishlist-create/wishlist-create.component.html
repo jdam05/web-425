@@ -1,0 +1,25 @@
+<!--
+    Title: wishlist-create.component.html.
+    Author: Jamal Eddine Damir
+    Date: February 8, 2023
+    Description: Component for wish list user input
+    Sources:
+            * Source code from class GitHub Repository
+            * W3Schools.com
+            * Instructor provided assignment specific instructions
+-->
+
+<!-- Form with input fields to add books to wishlist -->
+<form fxLayout="column" class="wishlist-create-form">
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="addItem()">Add item</button>
+</form>
