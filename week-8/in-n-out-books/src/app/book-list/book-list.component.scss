@@ -1,0 +1,34 @@
+/*
+ * Title: book-list.component.scss
+ * Date: February 4, 2023
+ * Author: Jamal Eddine Damir
+ * Description: In-n-out-books book-list styles
+ * Sources:
+ * Source code from class GitHub Repository
+ * Instructor provided assignment specific instructions
+ */
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+
+.grid-container__item {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.grid-container__ahref {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grid-container__ahref:hover {
+  text-decoration: underline;
+}
+
+.spinner {
+  margin-top: 2%;
+  margin-left: 45%;
+}

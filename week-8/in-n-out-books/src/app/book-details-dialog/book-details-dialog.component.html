@@ -1,0 +1,38 @@
+<!--
+    Title: book-details-dialog.component.html.
+    Author: Jamal Eddine Damir
+    Date: February 4, 2023
+    Description: Book-details-dialog HTML Component
+    Sources:
+            * Source code from class GitHub Repository
+            * W3Schools.com
+            * Instructor provided assignment specific instructions
+-->
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="blue">
+      <h1>{{ book.title }}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <br /><br />
+  <mat-card-content>
+    <div fxLayout="column" class="book-details">
+      <p>ISBN: {{ book.isbn }}</p>
+
+      <p>
+        Description:<br />
+        {{ book.description }}
+      </p>
+
+      <p>
+        Authors:<br />
+        {{ book.authors.join(", ") }}
+      </p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">
+      OK
+    </button>
+  </mat-card-actions>
+</mat-card>

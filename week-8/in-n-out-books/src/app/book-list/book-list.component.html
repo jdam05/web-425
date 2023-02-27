@@ -1,0 +1,43 @@
+<!--
+    Title: book-list.html.
+    Author: Jamal Eddine Damir
+    Date: February 4, 2023
+    Description: Book-list HTML Component
+    Sources:
+            * Source code from class GitHub Repository
+            * W3Schools.com
+            * Instructor provided assignment specific instructions
+-->
+
+<ng-container *ngIf="books.length === 0">
+  <mat-spinner class="spinner"></mat-spinner>
+</ng-container>
+
+<div *ngIf="books.length > 0">
+  <h2 class="green">Top {{ books.length }} Favorite Books</h2>
+  <div class="grid-container">
+    <ng-container *ngFor="let book of books">
+      <mat-card class="grid-container__item mat-elevation-z8">
+        <mat-card-header>
+          <mat-card-title>
+            <h3>
+              <a
+                class="grid-container__ahref blue"
+                (click)="showBookDetails(book.isbn)"
+                >{{ book.title }}
+              </a>
+            </h3>
+          </mat-card-title>
+        </mat-card-header>
+        <br />
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>ISBN: {{ book.isbn }}</mat-list-item>
+            <mat-list-item>Pages: {{ book.numOfPages }}</mat-list-item>
+            <mat-list-item>Authors: {{ book.authors.join(",") }}</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>
